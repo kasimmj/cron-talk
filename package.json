@@ -1,0 +1,23 @@
+{
+  "name": "cron-talk",
+  "version": "0.1.0",
+  "description": "Natural language → Cron expression. First library supporting Arabic alongside English.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": "./dist/index.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "keywords": ["cron", "scheduler", "natural-language", "arabic", "nlp", "i18n"],
+  "license": "MIT",
+  "author": "Kasim Mohammed <mrkasimmjk@gmail.com>",
+  "repository": "github:kasimmj/cron-talk",
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

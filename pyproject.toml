@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cron-talk"
+version = "0.1.0"
+description = "Natural language to cron expression — with Arabic support."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Kasim Mohammed", email = "mrkasimmjk@gmail.com" }]
+keywords = ["cron", "scheduler", "natural-language", "arabic", "i18n"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Natural Language :: Arabic",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Scheduling",
+]
+
+[project.urls]
+Homepage = "https://github.com/kasimmj/cron-talk"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cron_talk*"]
